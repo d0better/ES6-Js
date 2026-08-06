@@ -1,8 +1,8 @@
-let player = {
-    name: "Moses",
-    club: "Deen babes",
-    goals: 12
+let player1 = {
+    name: "knomic",
+    age:39,
+    club: "inter Miami"
 };
-for (let key in player){
-    console.log(key , player[key]);
-}
+let player2 = player1
+player2.name = "Messi"
+alert(player1.name)
