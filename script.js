@@ -1,10 +1,10 @@
 function player(name, position){
     this.name = name;
     this. position=position;
-}
-let p1= new player("Knomic", "LB");
-let p2 = new player("Neymar", "LW");
-let p3 = new player ("Halaand", "ST");
 
-console.log(p1)
-console.log(p2.name)
+    this.introduce = function(){
+        console.log(`I am ${this.name} and i play ${this.position}`)
+    }
+}
+let p1 = new player("Knomic", "LB");
+p1.introduce();
