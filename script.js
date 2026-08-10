@@ -1,8 +1,10 @@
-const players = [
-    { name: "Messi", goals: 30},
-    { name: "Ronaldo", goals: 28},
-    {name: "yamal", goals: 18}
-];
-for( let player of players){
-    console.log(player.name, player.goals)
+function player(name, position){
+    this.name = name;
+    this. position=position;
 }
+let p1= new player("Knomic", "LB");
+let p2 = new player("Neymar", "LW");
+let p3 = new player ("Halaand", "ST");
+
+console.log(p1)
+console.log(p2.name)
