@@ -1,15 +1,9 @@
-const defenders = ["Saliba", "Gabriel"];
-const midfielders = ["Rice", "Partey"];
-const squad = [...defenders, ...midfielders]
-console.log(squad)
-
-const basePlayer = {
-    name: "moses",
-    position:"LB"
-};
-const updateBasePlayer = {
-    ...basePlayer,
-    number: 13,
-    club: "Deen Babes Fc"
-};
-console.log(updateBasePlayer)
+function showPlayers(...players) {
+    console.log(players)
+}
+showPlayers("saka", "rice", "odgaard");
+function showPlayers(...players) {
+    for(let player of players){
+        console.log(player)
+    }
+}
