@@ -1,18 +1,15 @@
-class Account {
-    constructor(Username) {
-        this.Username=Username
-    }
-    showUser(){
-        console.log(`user:${this.Username}`)
-    }
-}
+const defenders = ["Saliba", "Gabriel"];
+const midfielders = ["Rice", "Partey"];
+const squad = [...defenders, ...midfielders]
+console.log(squad)
 
-class Streamer extends Account{
-    goLive(){
-        console.log(`${this.Username} is now live`)
-    }
-}
-
-const streamer = new Streamer ("knomic")
-streamer.showUser();
-streamer.goLive();
+const basePlayer = {
+    name: "moses",
+    position:"LB"
+};
+const updateBasePlayer = {
+    ...basePlayer,
+    number: 13,
+    club: "Deen Babes Fc"
+};
+console.log(updateBasePlayer)
