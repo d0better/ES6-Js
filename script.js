@@ -1,16 +1,18 @@
-class Gamer {
+class Account {
     constructor(Username) {
         this.Username=Username
     }
-    login(){
-        console.log(`${this.Username} is logged in`)
+    showUser(){
+        console.log(`user:${this.Username}`)
     }
 }
- class FutPlayer extends Gamer {
-    playMatch(){
-        console.log(`${this.Username} is playing a match`)
+
+class Streamer extends Account{
+    goLive(){
+        console.log(`${this.Username} is now live`)
     }
- }
- const player = new FutPlayer("knomic")
- player.login();
- player.playMatch();
+}
+
+const streamer = new Streamer ("knomic")
+streamer.showUser();
+streamer.goLive();
