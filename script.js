@@ -1,10 +1,16 @@
-function player(name, position){
-    this.name = name;
-    this. position=position;
-
-    this.introduce = function(){
-        console.log(`I am ${this.name} and i play ${this.position}`)
+class Gamer {
+    constructor(Username) {
+        this.Username=Username
+    }
+    login(){
+        console.log(`${this.Username} is logged in`)
     }
 }
-let p1 = new player("Knomic", "LB");
-p1.introduce();
+ class FutPlayer extends Gamer {
+    playMatch(){
+        console.log(`${this.Username} is playing a match`)
+    }
+ }
+ const player = new FutPlayer("knomic")
+ player.login();
+ player.playMatch();
