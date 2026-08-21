@@ -1,5 +1,12 @@
-function calculate(...numbers) {
-    return numbers.reduce((total, sum) => total + sum , 0) / numbers.length 
-}
-console.log(calculate(10, 20, 30));
-console.log(calculate(5, 10, 15, 20));
+let player = {
+    name : "Haaland",
+    age:25,
+    position:"striker",
+    club:"Man city"
+};
+let {name:playerName}=player
+let{age:playerAge}=player
+let{club:team}=player
+console.log(playerName)
+console.log(playerAge)
+console.log(team)
