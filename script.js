@@ -1,12 +1,8 @@
 let player = {
-    name : "Haaland",
-    age:25,
-    position:"striker",
-    club:"Man city"
+    name:"Mbappe",
+    club:"Real Madrid"
 };
-let {name:playerName}=player
-let{age:playerAge}=player
-let{club:team}=player
-console.log(playerName)
-console.log(playerAge)
-console.log(team)
+let{name, club, age = 27} = player
+console.log(name)
+console.log(age)
+console.log(club)
