@@ -1,8 +1,5 @@
-let player = {
-    name:"Mbappe",
-    club:"Real Madrid"
-};
-let{name, club, age = 27} = player
-console.log(name)
-console.log(age)
-console.log(club)
+const clubs = ["man united", "barcelona", "real madrid"]
+const [first, second, third] = clubs;
+console.log(second);
+console.log(first);
+console.log(third);
