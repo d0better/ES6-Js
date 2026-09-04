@@ -1,6 +1,12 @@
-const players = ["saka", "neymar", "haaland"];
-const [first, , third, fourth = "mbappe", ...others ] = players
-console.log(first);
-console.log(third);
-console.log (fourth);
-console.log(others);
+const student = {
+    name : "knomic",
+    age : 20 ,
+    course: "javascript"
+};
+
+function introduce({name, course}) {
+    console.log(name);
+    console.log(course);
+}
+
+introduce(student);
