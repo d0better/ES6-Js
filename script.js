@@ -1,5 +1,7 @@
-const clubs = ["man united", "barcelona", "real madrid"]
-const [first, second, third] = clubs;
-console.log(second);
-console.log(first);
-console.log(third);
+let striker = "haaland";
+let winger = "saka";
+
+[striker, winger] = [winger, striker];
+
+console.log(striker);
+console.log(winger);
