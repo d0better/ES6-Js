@@ -1,4 +1,6 @@
-const scores = [95, 88, 76, 64, 52];
-const [first, ...remaining] = scores 
-console.log(first)
-console.log(...remaining)
+const players = ["saka", "neymar", "haaland"];
+const [first, , third, fourth = "mbappe", ...others ] = players
+console.log(first);
+console.log(third);
+console.log (fourth);
+console.log(others);
